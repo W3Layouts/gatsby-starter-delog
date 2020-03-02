@@ -1,0 +1,33 @@
+backend:
+  name: github
+  repo: munwr/hello-gatsby-netlify
+media_folder: static/assets
+public_folder: /assets
+collections:
+  - name: blog
+    label: Blog
+    folder: _data/blog
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    create: true
+    fields:
+      - {
+          label: Template,
+          name: template,
+          widget: hidden,
+          default: BlogPost,
+        }
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: datetime }
+      - { name: title, label: Title }
+      - label: Featured Image
+        name: thumbnail
+        widget: image
+        required: false
+        media_library:
+          config:
+            multiple: false
+      - { name: body, label: Body, widget: markdown }
+      - label: Meta Description
+        name: metaDescription
+        widget: text
+        required: false
