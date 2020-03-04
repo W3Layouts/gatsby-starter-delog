@@ -10,11 +10,8 @@ This simple website built with GatsbyJS and Netlify CMS. Deploys on netlify with
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8ec719ad-c2f8-4529-b97d-e7561a9eaf33/deploy-status)](https://app.netlify.com/sites/delog-w3layouts/deploys)
 
-## Accessing Netlify CMS Admin
-Once the your site is live, Netlify will give you your website URL. like example.netlify.com, for this add `/admin/`, You will see login with Github button.
-* After clicking on it, you will get error "No Auth Provider Found"
-* Goto your Netlify site admin
-* Goto **Access Control** > **OAuth** then **Install Provider** you need to select provider as `Github` as add `Client ID` and `Secret` 
+## Changing repositary URL for Netlify CMS access
+You need to change repo URL to your own `repo` at delog/static/admin/config.yml, for example `username/repo-name`
 
 ## Creating Github OAuth Client ID
 * Goto Github [Developer Settings](https://github.com/settings/developers)
@@ -22,7 +19,12 @@ Once the your site is live, Netlify will give you your website URL. like example
 * Enter Application name
 * Homepage URL as Netlify URL
 * And **Authorization callback URL** to `https://api.netlify.com/auth/done`)
-* Once Client ID and Secret token is generated configure same in [Netlify Access Control](#accessing-netlify-cms-admin) as described earlier. Now go back to `example.netlify.com/admin` and connect with github and Authorize. Now you will be redirected to Netlify CMS
+* Once Client ID and Secret token is generated configure same in [Netlify Access Control](#accessing-netlify-cms-admin) as described.
+
+## Accessing Netlify CMS Admin
+* Goto your Netlify site admin
+* Goto **Access Control** > **OAuth** then **Install Provider** you need to select provider as `Github` as add `Client ID` and `Secret` 
+* Your Netlify CMS is ready. Goto you netlify site URL and append `/admin/`. for example `example.netlify.com/admin/`, You will see login with Github button.
 
 ## Managing Blog Posts in Netlify CMS
 * Once logged in you will find all the blog post listed here.
