@@ -1,6 +1,5 @@
 {
   "name": "gatsby-starter-delog",
-  "private": true,
   "description": "A simplified blog for developers and designer. This starter built with Gatsby and Netlify CMS",
   "version": "0.1.0",
   "license": "MIT",
@@ -32,12 +31,5 @@
   },
   "devDependencies": {
     "prettier": "^1.19.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/W3Layouts/delog/"
-  },
-  "bugs": {
-    "url": "https://github.com/W3Layouts/delog/issues"
   }
 }
