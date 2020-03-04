@@ -1,5 +1,5 @@
 # Delog - Blog for Developer and Designer
-This simple website built with GatsbyJS and Netlify CMS. Deploys on netlify with single click.
+This simple website built with GatsbyJS and Netlify CMS. Deploys on netlify with single click. This Starter is sponsered by [W3Layouts](https://w3layouts.com).
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=hhttps://github.com/W3Layouts/delog/)
 
@@ -28,6 +28,20 @@ Once the your site is live, Netlify will give you your website URL. like example
 * Once logged in you will find all the blog post listed here.
 * You can create, edit, update and delete like any CMS
 
-I hope you build a great website with Delog. This Starter is sponsered by [W3Layouts](https://w3layouts.com).
+## Editing Meta Data
+Goto `gatsby-config.js`. Here you can edit following details
+* Title
+* Description
+* Site URL
+* Homepage Title
+* Homepage Description
+* W3Layouts Contact form domain verification key
+* and google analytics tracking id
 
-For issues,feedback on enhancement or sharing your new awesome website built with delog here. [Create New Issue](https://github.com/W3Layouts/delog/issues/new)
+I hope you build a great website with Delog. If you like it please spread the word, Feel free to contribute and raise a pull request :)
+
+For issues,feedback on enhancement or sharing your new awesome website built with delog. [Create New Issue](https://github.com/W3Layouts/delog/issues/new) Here
+
+### Upcoming Features Roadmap
+- [ ] Pagination for Blog
+- [ ] Socail Icons
