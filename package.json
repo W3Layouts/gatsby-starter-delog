@@ -1,16 +1,11 @@
 {
   "name": "gatsby-starter-delog",
   "description": "A simplified blog for developers and designer. This starter built with Gatsby and Netlify CMS",
+  "author": "W3Layouts Team <support@w3layouts.com>",
   "version": "0.1.0",
   "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  "bugs": {
+    "url": "https://github.com/W3Layouts/Delog/issues"
   },
   "dependencies": {
     "gatsby": "^2.19.7",
@@ -31,5 +26,23 @@
   },
   "devDependencies": {
     "prettier": "^1.19.1"
+  },
+  "homepage": "https://github.com/W3Layouts/Delog#readme",
+  "keywords": [
+    "gatsby",
+    "netlify cms"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/W3Layouts/Delog.git"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   }
 }
