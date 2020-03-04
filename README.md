@@ -1,7 +1,7 @@
 # Delog - Blog for Developer and Designer
 This simple website built with GatsbyJS and Netlify CMS. Deploys on netlify with single click. This Starter is sponsered by [W3Layouts](https://w3layouts.com).
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=hhttps://github.com/W3Layouts/delog/)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/W3Layouts/delog/)
 
 * Once you hit "Deploy to Netlify"
 * Connect Github
