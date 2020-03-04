@@ -8,6 +8,4 @@ This simple website built with GatsbyJS and Netlify CMS. Deploys on netlify with
 * Enter Repository Name
 * And your site starts build process. After the build process your website is live
 
----
-### Status of Current Build [![Netlify Status](https://api.netlify.com/api/v1/badges/8ec719ad-c2f8-4529-b97d-e7561a9eaf33/deploy-status)](https://app.netlify.com/sites/delog-w3layouts/deploys)
----
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8ec719ad-c2f8-4529-b97d-e7561a9eaf33/deploy-status)](https://app.netlify.com/sites/delog-w3layouts/deploys)
