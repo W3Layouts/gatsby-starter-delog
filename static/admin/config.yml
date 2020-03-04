@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: munwr/hello-gatsby-netlify
+  repo: W3Layouts/delog
 media_folder: static/assets
 public_folder: /assets
 collections:
