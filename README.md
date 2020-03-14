@@ -1,5 +1,9 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8ec719ad-c2f8-4529-b97d-e7561a9eaf33/deploy-status)](https://app.netlify.com/sites/delog-w3layouts/deploys)
+
 # Delog - Blog for Developer and Designer
 This simple website built with GatsbyJS and Netlify CMS. Deploys on netlify with single click. This Starter is sponsered by [W3Layouts](https://w3layouts.com).
+
+[![Delog - Gatsby Starter Demo](https://w3layouts.com/wp-content/uploads/2020/03/gatsby-starter.jpg)](https://delog-w3layouts.netlify.com/)
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/W3Layouts/gatsby-starter-delog)
 
@@ -7,8 +11,6 @@ This simple website built with GatsbyJS and Netlify CMS. Deploys on netlify with
 * Connect Github
 * Enter Repository Name
 * And your site starts build process. After the build process your website is live
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8ec719ad-c2f8-4529-b97d-e7561a9eaf33/deploy-status)](https://app.netlify.com/sites/delog-w3layouts/deploys)
 
 ## Changing repositary URL for Netlify CMS access
 You need to change repo URL to your own `repo` at delog/static/admin/config.yml, for example `username/repo-name`
