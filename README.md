@@ -48,4 +48,4 @@ For issues,feedback on enhancement or sharing your new awesome website built wit
 
 ### Upcoming Features Roadmap
 - [ ] Pagination for Blog
-- [ ] Socail Icons
+- [ ] Social Icons
