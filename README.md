@@ -16,8 +16,6 @@ Instructions also available at W3Layouts [Delog Launch Article](https://w3layout
 - In-built contact form powered by [W3Layouts](https://w3layouts.com) 
 - Comes with dark mode
 
-![](https://media.giphy.com/media/LpA9zBJwXQcx1c0o8J/400w_d.gif)
-
 ---
 
 ## Documentation
