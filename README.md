@@ -8,6 +8,7 @@ This simple website built with GatsbyJS and Netlify CMS. Deploys on netlify with
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/W3Layouts/gatsby-starter-delog)
 
 Instructions also available at W3Layouts [Delog Launch Article](https://w3layouts.com/articles/delog-gatsby-starter-netlify-cms/).
+
 ## Features
 - Built with GatsbyJS and Netlify CMS
 - Option to Add, Edit, Update and Delete posts via Netlify CMS
@@ -15,7 +16,7 @@ Instructions also available at W3Layouts [Delog Launch Article](https://w3layout
 - In-built contact form powered by [W3Layouts](https://w3layouts.com) 
 - Comes with dark mode
 
-![](https://media.giphy.com/media/LpA9zBJwXQcx1c0o8J/800w_d.gif)
+![](https://media.giphy.com/media/LpA9zBJwXQcx1c0o8J/400w_d.gif)
 
 ---
 
