@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: W3Layouts/delog
+  repo: W3Layouts/gatsby-starter-delog
 media_folder: static/assets
 public_folder: /assets
 collections:
@@ -22,6 +22,7 @@ collections:
       - label: Featured Image
         name: thumbnail
         widget: image
+        hint: "Image size 1280x800 works best :)"
         required: false
         media_library:
           config:

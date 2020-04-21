@@ -1,6 +1,3 @@
-$primary-color: #381696;
-$primary-text-color: #fff;
-
 html,
 body {
   margin: 0;
@@ -9,15 +6,51 @@ body {
 * {
   margin-top: 0
 }
+body.light {
+  --primary-color: #381696;
+  --primary-text-color: #fff;
+  --featured-bg: #493b8a;
+  --featured-text: #fff;
+  --secondary-color: #10072b;
+  --background: #fff;
+  --site-header: var(--background);
+  --card-bg: #fff;
+  --card-bdr: #eee;
+  --card-shadow: #d5d5d5;
+  --btn-bg: var(--background);
+  --btn-bdr: #d3d6e7;
+  --btn-text-color: #868892;
+  --btn-hover-bg: var(--btn-bdr);
+  --btn-hover-text-color: #00062b;
+}
+body.dark {
+  --primary-color: #9984d5;
+  --primary-text-color: #fff;
+  --featured-bg: #66578d;
+  --featured-text: #fff;
+  --secondary-color: #66578d;
+  --background: #0A041A;
+  --text-color: rgba(255,255,255,0.88);
+  --text-secondary-color: rgba(255,255,255,0.66);
+  --site-header: var(--background);
+  --card-bg: #181326;
+  --card-bdr: #181326;
+  --card-shadow: #020204;
+  --btn-bg: var(--background);
+  --btn-bdr: #d3d6e7;
+  --btn-text-color: #868892;
+  --btn-hover-bg: var(--btn-bdr);
+  --btn-hover-text-color: #00062b;
+}
 /* System Fonts as used by Medium and WordPress */
 body {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-  background-color: #fff;
-  //background-color: #fff;
-  border-top: 10px solid $primary-color;
+  border-top: 10px solid var(--primary-color);
+  background-color: var(--background);
+  color: var(--text-color);
 }
 a {
-  color: $primary-color;
+  color: var(--primary-color);
   text-decoration: none;
   &:hover {
     text-decoration: underline;
@@ -32,17 +65,19 @@ a {
   }
 }
 .navigation {
+  display: flex;
+  align-items: center;
   font-weight: 300;
   a {
     color: #888;
     text-decoration: none;
     margin: 0 8px 0;
     &[aria-current] {
-      color: $primary-color;
+      color: var(--primary-color);
       font-weight: 700;
     }
     &:hover {
-      color: $primary-color;
+      color: var(--primary-color);
     }
     &:last-child {
       margin-right: 0;
@@ -53,12 +88,12 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 20px 0;
-  background: white;
+  background: var(--site-header);
   margin-bottom: 32px;
   align-items: center;
 }
 .site-title a {
-  color: $primary-color;
+  color: var(--primary-color);
   text-decoration: none;
   font-weight: 900;
   text-transform: uppercase;
@@ -75,28 +110,28 @@ a {
 .button {
   padding: 18px 27px;
   display: inline-block;
-  background:#fff;
-  border: 1px solid #d3d6e7;
+  background: var(--btn-bg);
+  border: 1px solid var(--btn-bdr);
   border-radius: 9px;
   text-decoration: none;
-  color:#868892;
+  color: var(--btn-text-color);
   font-size: 16px;
   font-weight: 400;
   margin: 0 20px 0 0;
   transition: background-color .3s linear;
   &.-primary {
-    background-color: $primary-color;
-    border-color: $primary-color;
-    color: $primary-text-color;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--primary-text-color);
     &:hover {
-      background-color: #10072b;
-      color: #fff;
+      background-color: var(--secondary-color);
+      color: var(--primary-text-color);
       text-decoration: none;
     }
   }
   &:hover {
-    background-color: #d3d6e7;
-    color: #00062b;
+    background-color: var(--btn-hover-bg);
+    color: var(--btn-hover-text-color);
   }
 }
 .primary-content {
@@ -107,7 +142,8 @@ a {
 }
 .post {
   padding: 0;
-  background:white;
+  background:var(--background);
+  color: var(--text-color);
   line-height: 1.5;
   > .blog-post-content {
     max-width: 768px;
@@ -133,13 +169,13 @@ a {
   text-align: center;
   min-height: 380px;
   //background-image: url('/assets/circles-light.png');
-  background-color: #493b8a;
+  background-color: var(--featured-bg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   border-radius: 18px;
   margin-bottom: 36px;
-  color: white;
+  color: var(--featured-text);
   display: grid;
   align-content: center;
   position: relative;
@@ -172,14 +208,14 @@ a {
 }
 .card {
   display: grid;
-  background:white;
+  background-color: var(--card-bg);
   border-radius: 9px;
-  border: 1px solid #eee;
-  box-shadow: 0 0 30px #d5d5d5;
+  border: 1px solid var(--card-bdr);
+  box-shadow: 0 0 30px var(--card-shadow);
   overflow: hidden;
   line-height: 1.5;
   &:hover .post-link {
-    color: $primary-color;
+    color: var(--primary-color);
   }
   > a img {
     display: block;
@@ -199,13 +235,13 @@ a {
     margin-bottom: 0;
   }
   .post-link {
-    color: #333;
+    color: var(--text-color);
     text-decoration: none;
   }
 }
 .post-meta {
   font-size: 0.8rem;
-  color: #666;
+  color: var(--text-secondary-color);
 }
 .site-footer {
   text-align: center;
@@ -266,4 +302,94 @@ and (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
     grid-gap: 64px;
   }
+}
+
+
+// theme-changer
+.theme-changer {
+  display: none;
+}
+body.dark {
+  .gg-moon {
+    display: none;
+  }
+}
+body.light {
+  .gg-sun {
+    display: none;
+  }
+}
+.mode-container {
+  width: 24px;
+  height: 24px;
+  margin-left: 20px;
+}
+// CSS.gg icons for sun and moon
+.gg-sun {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 24px;
+  height: 24px;
+  background:
+    linear-gradient(to bottom,
+        currentColor 4px,transparent 0)
+        no-repeat 5px -6px/2px 6px,
+    linear-gradient(to bottom,
+        currentColor 4px,transparent 0)
+        no-repeat 5px 14px/2px 6px,
+    linear-gradient(to bottom,
+        currentColor 4px,transparent 0)
+        no-repeat -8px 5px/6px 2px,
+    linear-gradient(to bottom,
+        currentColor 4px,transparent 0)
+        no-repeat 14px 5px/6px 2px;
+  border-radius: 100px;
+  box-shadow: inset 0 0 0 2px;
+  border: 6px solid transparent
+}
+.gg-sun::after,
+.gg-sun::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  border-right: 4px solid;
+  border-left: 4px solid;
+  left: -6px;
+  top: 5px
+}
+.gg-sun::before {
+  transform: rotate(-45deg)
+}
+.gg-sun::after {
+  transform: rotate(45deg)
+}
+.gg-moon,
+.gg-moon::after {
+    display: block;
+    box-sizing: border-box;
+    border-radius: 50%
+}
+.gg-moon {
+    overflow: hidden;
+    position: relative;
+    transform: rotate(-135deg) scale(var(--ggs,1));
+    width: 20px;
+    height: 20px;
+    border: 2px solid;
+    border-bottom-color: transparent
+}
+.gg-moon::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 18px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    top: 8px;
+    left: 2px
 }
