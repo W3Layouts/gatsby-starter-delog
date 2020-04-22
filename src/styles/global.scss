@@ -1,3 +1,5 @@
+$font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+
 html,
 body {
   margin: 0;
@@ -22,6 +24,9 @@ body.light {
   --btn-text-color: #868892;
   --btn-hover-bg: var(--btn-bdr);
   --btn-hover-text-color: #00062b;
+  --contact-bg: #f7f8fe;
+  --contact-bdr: #d3d6e7;
+  --input-bg: var(--background);
 }
 body.dark {
   --primary-color: #9984d5;
@@ -41,10 +46,13 @@ body.dark {
   --btn-text-color: #868892;
   --btn-hover-bg: var(--btn-bdr);
   --btn-hover-text-color: #00062b;
+  --contact-bg: var(--card-shadow);
+  --contact-bdr: var(--card-bg);
+  --input-bg: var(--card-bg);
 }
 /* System Fonts as used by Medium and WordPress */
 body {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  font-family: $font-family;
   border-top: 10px solid var(--primary-color);
   background-color: var(--background);
   color: var(--text-color);
@@ -252,24 +260,28 @@ a {
   }
 }
 .form-container {
-  background-color: #f7f8fe;
+  background-color: var(--contact-bg);
   padding: 32px;
-  border: 1px solid #d3d6e7;
+  border: 1px solid var(--contact-bdr);
   border-radius: 9px;
   label {
     display: block;
     margin-bottom: 0.5rem;
+    color: var(--text-secondary-color);
   }
   input[type=text],
   input[type=email],
   textarea {
     appearance: none;
-    border: 1px solid #d3d6e7;
+    border: 1px solid var(--card-shadow);
+    color: var(--text-secondary-color);
     border-radius: 6px;
     line-height: 32px;
     padding: 6px 12px;
     width: calc(100% - 24px);
     margin-bottom: 1.5rem;
+    background-color: var(--input-bg);
+    font-family: $font-family;
   }
   textarea {
     margin-bottom: 2rem;
