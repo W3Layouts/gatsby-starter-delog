@@ -69,5 +69,6 @@ For issues,feedback on enhancement or sharing your new awesome website built wit
 - [x] Dark Mode
 
 ## Change log
+- Adding support for GatsbyJS Increment builds with Netlify (April 28, 2020)
 - Dark Mode (April 21, 2020)
 - Official Launch (March 14, 2020)
