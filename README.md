@@ -8,7 +8,7 @@ This simple website built with GatsbyJS and Netlify CMS. Deploys on netlify with
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/W3Layouts/gatsby-starter-delog)
 
 Install this starter locally:
-`gatsby new gatsby-starter-delog https://github.com/W3Layouts/gatsby-starter-delog`...
+>`gatsby new gatsby-starter-delog https://github.com/W3Layouts/gatsby-starter-delog`
 
 Instructions also available at W3Layouts [Delog Launch Article](https://w3layouts.com/articles/delog-gatsby-starter-netlify-cms/).
 
