@@ -69,6 +69,8 @@ For issues,feedback on enhancement or sharing your new awesome website built wit
 - [x] Dark Mode
 
 ## Change log
-- Adding support for GatsbyJS Increment builds with Netlify (April 28, 2020)
-- Dark Mode (April 21, 2020)
-- Official Launch (March 14, 2020)
+- April 30, 2020 - Adding `gatsby-plugin-offline` Adds drop-in support for making a Gatsby site work offline and more resistant to bad network connections.
+- April 30, 2020 - Adding `gatsby-plugin-manifest` configures Gatsby to create a manifest.webmanifest file on every site build.
+- April 28, 2020 — Adding support for GatsbyJS Increment builds with Netlify
+- April 21, 2020 - Dark Mode
+- March 14, 2020 - Official Launch
