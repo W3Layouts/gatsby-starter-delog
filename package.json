@@ -1,11 +1,11 @@
 {
-  "name": "delog",
+  "name": "gatsby-starter-delog",
   "description": "A simplified blog for developers and designer. This starter built with Gatsby and Netlify CMS",
-  "author": "W3Layouts Team <support@w3layouts.com>",
-  "version": "0.1.0",
+  "author": "W3Layouts Team <info@w3layouts.com>",
+  "version": "1.4.0",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/W3Layouts/Delog/issues"
+    "url": "https://github.com/W3Layouts/gatsby-starter-delog/issues"
   },
   "dependencies": {
     "gatsby": "^2.21.0",
@@ -16,6 +16,7 @@
     "gatsby-plugin-offline": "^3.2.0",
     "gatsby-plugin-react-helmet": "^3.1.22",
     "gatsby-plugin-sass": "^2.1.28",
+    "gatsby-plugin-sitemap": "^2.4.0",
     "gatsby-remark-emojis": "^0.4.2",
     "gatsby-remark-prismjs": "^3.3.31",
     "gatsby-source-filesystem": "^2.1.48",
@@ -30,14 +31,14 @@
   "devDependencies": {
     "prettier": "^1.19.1"
   },
-  "homepage": "https://github.com/W3Layouts/Delog#readme",
+  "homepage": "https://github.com/W3Layouts/gatsby-starter-delog#readme",
   "keywords": [
     "gatsby",
     "netlify cms"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/W3Layouts/Delog.git"
+    "url": "git+https://github.com/W3Layouts/gatsby-starter-delog.git"
   },
   "scripts": {
     "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",

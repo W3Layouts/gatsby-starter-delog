@@ -1,4 +1,6 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8ec719ad-c2f8-4529-b97d-e7561a9eaf33/deploy-status)](https://app.netlify.com/sites/delog-w3layouts/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8ec719ad-c2f8-4529-b97d-e7561a9eaf33/deploy-status)](https://app.netlify.com/sites/delog-w3layouts/deploys) &nbsp;<a href="https://twitter.com/intent/follow?screen_name=w3layouts">
+  <img src="https://img.shields.io/twitter/follow/w3layouts.svg?label=Follow%20@w3layouts" alt="Follow @w3layouts" />
+</a>
 
 # Delog - Blog for Developer and Designer
 This simple website built with GatsbyJS and Netlify CMS. Deploys on netlify with single click. This Starter is sponsered by [W3Layouts](https://w3layouts.com).
@@ -68,9 +70,32 @@ For issues,feedback on enhancement or sharing your new awesome website built wit
 - [ ] Social Icons
 - [x] Dark Mode
 
-## Change log
-- April 30, 2020 - Adding `gatsby-plugin-offline` Adds drop-in support for making a Gatsby site work offline and more resistant to bad network connections.
-- April 30, 2020 - Adding `gatsby-plugin-manifest` configures Gatsby to create a manifest.webmanifest file on every site build.
-- April 28, 2020 — Adding support for GatsbyJS Increment builds with Netlify
-- April 21, 2020 - Dark Mode
-- March 14, 2020 - Official Launch
+---
+
+## Changelog
+All notable changes to this project are listed here.
+
+### [1.4.0] - 2020-05-01
+#### Added
+- `gatsby-plugin-sitemap` Creates a sitemap for your Gatsby site in production.
+
+#### Changed
+- Changelog improvements
+- Comments on `gatsby-config.js`
+- Comments on `static/admin/config.yml`
+
+### [1.3.0] - 2020-04-30
+#### Added
+- `gatsby-plugin-offline` drop-in support for making a GatsbyJS site work offline and more resistant to bad network connections.
+- `gatsby-plugin-manifest` configures GatsbyJS to create a manifest.webmanifest file on every site build
+
+### [1.2.0] - 2020-04-28
+#### Added 
+- GatsbyJS Increment builds with Netlify deployment
+
+### [1.1.0] - 2020-04-21
+#### Added 
+- Dark mode compatibitly and toggle for user preference
+
+### [1.0.0] - 2020-03-14
+- Launch of GatsbyJS and Netlify CMS based starter `gatsby-starter-delog`
