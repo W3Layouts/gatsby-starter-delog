@@ -16,9 +16,31 @@ collections:
         fields:
           - widget: string
             name: title
-            label: Title
+            label: Site Title
             required: true
-            hint: Site title
+          - widget: string
+            name: siteUrl
+            label: Website URL
+            required: true
+          - widget: text
+            name: description
+            label: Description
+            default: ''
+            required: false
+          - widget: object
+            name: home
+            label: Homepage Options
+            fields: 
+              - widget: string
+                name: title
+                label: Title
+                default: ''
+                required: false
+              - widget: markdown
+                name: description
+                label: Description
+                default: ''
+                required: false
   - name: blog
     label: Blog
     folder: _data/blog
