@@ -12,7 +12,7 @@ const ContactPage = ({
     <Layout>
       <Helmet>
         <title>Contact — {site.siteMetadata.title}</title>
-        <meta name="description" content={site.siteMetadata.description} />
+        <meta name="description" content={"Contact page of " + site.siteMetadata.description} />
       </Helmet>
       <div className="two-grids -contact">
         <div className="post-thumbnail" style={{backgroundImage: `url('/assets/alexander-andrews-HgUDpaGPTEA-unsplash.jpg')`, marginBottom: 0}}>

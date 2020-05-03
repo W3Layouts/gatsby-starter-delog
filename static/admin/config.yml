@@ -46,6 +46,7 @@ collections:
             label: W3Layouts Domain Verification Key
             required: false
             hint: This is required for contact form. You can get it from https://my.w3layouts.com/Forms/
+
   - name: blog
     label: Blog
     folder: _data/blog
@@ -58,9 +59,17 @@ collections:
           widget: hidden,
           default: BlogPost,
         }
-      - { name: path, label: Path }
+      - name: path, 
+        label: Path, 
+        widget: string
+        pattern: [/]
+        hint: "Path must start with /"
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
+      - label: Meta Description
+        name: metaDescription
+        widget: text
+        required: false
       - label: Featured Image
         name: thumbnail
         widget: image
@@ -70,7 +79,4 @@ collections:
           config:
             multiple: false
       - { name: body, label: Body, widget: markdown }
-      - label: Meta Description
-        name: metaDescription
-        widget: text
-        required: false
+      
