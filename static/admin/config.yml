@@ -2,9 +2,23 @@ backend:
   name: github
   # change repo to your git repository url
   repo: W3Layouts/gatsby-starter-delog
+
 media_folder: static/assets
 public_folder: /assets
+
 collections:
+  - name: settings
+    label: Settings
+    files:
+      - name: config
+        label: Config
+        file: site-meta-data.json
+        fields:
+          - widget: string
+            name: title
+            label: Title
+            required: true
+            hint: Site title
   - name: blog
     label: Blog
     folder: _data/blog
