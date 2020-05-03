@@ -5,32 +5,6 @@ backend:
 media_folder: static/assets
 public_folder: /assets
 collections:
-  - name: settings
-    label: Settings
-    files: 
-      - name: settings
-        label: Settings
-        file: "/site-meta-data.json"
-        fields:
-          - widget: string
-            name: title
-            label: Title
-            required: true
-            hint: Site title
-          - widget: select
-            name: palette
-            label: Color Palette
-            required: true
-            default: blue
-            options:
-              - blue
-              - cyan
-              - green
-              - red
-          - widget: hidden
-            name: palettes
-            label: Palettes
-            required: false
   - name: blog
     label: Blog
     folder: _data/blog
