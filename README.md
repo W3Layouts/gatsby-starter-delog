@@ -9,8 +9,10 @@ This simple website built with GatsbyJS and Netlify CMS. Deploys on netlify with
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/W3Layouts/gatsby-starter-delog)
 
-Install this starter locally:
->`gatsby new gatsby-starter-delog https://github.com/W3Layouts/gatsby-starter-delog`
+Install this starter locally: (assuming you already have [NodeJS and GatsbyJS installed](https://www.gatsbyjs.org/tutorial/part-zero/))
+```bash
+gatsby new gatsby-starter-delog https://github.com/W3Layouts/gatsby-starter-delog
+```
 
 Instructions also available at W3Layouts [Delog Launch Article](https://w3layouts.com/articles/delog-gatsby-starter-netlify-cms/).
 
@@ -31,7 +33,7 @@ Instructions also available at W3Layouts [Delog Launch Article](https://w3layout
 * And your site starts build process. After the build process your website is live
 
 ### Changing repositary URL for Netlify CMS access
-You need to change repo URL to your own `repo` at delog/static/admin/config.yml, for example `username/repo-name`
+You need to change repo URL to your own `repo` at `/static/admin/config.yml`, for example `username/repo-name`
 
 ### Creating Github OAuth Client ID
 * Goto Github [Developer Settings](https://github.com/settings/developers)
@@ -51,21 +53,21 @@ You need to change repo URL to your own `repo` at delog/static/admin/config.yml,
 * You can create, edit, update and delete like any CMS
 
 ### Editing Meta Data
-Inside you Netlify CMS admin, `Settings > Config` or you can got to `site-meta-data.json`. Here you can edit following details
+Inside you Netlify CMS admin, `Settings > Config` or you can go to `site-meta-data.json`. Here you can edit following details
 * Title
 * Description
 * Site URL
 * Homepage Title
 * Homepage Description
 * W3Layouts Contact form domain verification key
-  * Follow the steps [W3Layouts Contact form](https://w3layouts.com/articles/introducing-contact-forms-for-static-websites/) instructions and grab domain verification key (for example: xxxxxxxxxxxxxxx_Domain_verify) then past it as value for [w3l_dom_key](https://github.com/W3Layouts/gatsby-starter-delog/blob/109b93b42385238da52cf46e8e80d8a77730e42d/gatsby-config.js#L18) in `gatsby-config.js` file in your project.
+  * Follow the steps [W3Layouts Contact form](https://w3layouts.com/articles/introducing-contact-forms-for-static-websites/) instructions and grab domain verification key (for example: xxxxxxxxxxxxxxx_Domain_verify) then past it as value for [w3l_dom_key](https://github.com/W3Layouts/gatsby-starter-delog/blob/17921abf2cc56d2b78efda642079c339201fae11/site-meta-data.json#L9)
 
 ### Add Google Analytics
 Change `trackingId` in `gatsby-config.js` at `gatsby-plugin-google-analytics` plugin
 
-I hope you build a great website with Delog. If you like it please spread the word, Feel free to contribute and raise a pull request :)
+I hope you will build a great website with Delog. If you like it please spread the word, Feel free to contribute and raise a pull request :)
 
-For issues,feedback on enhancement or sharing your new awesome website built with delog. [Create New Issue](https://github.com/W3Layouts/delog/issues/new) Here
+For issues,feedback on enhancement or sharing your new awesome website built with delog. [Create New Issue](https://github.com/W3Layouts/gatsby-starter-delog/issues/new) Here
 
 ### Roadmap
 We are maintaining future task in [Github Project](https://github.com/W3Layouts/gatsby-starter-delog/projects/1), even though most changes are instantaious. We try keep them posted here.
