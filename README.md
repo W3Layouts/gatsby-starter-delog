@@ -51,7 +51,7 @@ You need to change repo URL to your own `repo` at delog/static/admin/config.yml,
 * You can create, edit, update and delete like any CMS
 
 ### Editing Meta Data
-Goto `gatsby-config.js`. Here you can edit following details
+Inside you Netlify CMS admin, `Settings > Config` or you can got to `site-meta-data.json`. Here you can edit following details
 * Title
 * Description
 * Site URL
@@ -59,21 +59,26 @@ Goto `gatsby-config.js`. Here you can edit following details
 * Homepage Description
 * W3Layouts Contact form domain verification key
   * Follow the steps [W3Layouts Contact form](https://w3layouts.com/articles/introducing-contact-forms-for-static-websites/) instructions and grab domain verification key (for example: xxxxxxxxxxxxxxx_Domain_verify) then past it as value for [w3l_dom_key](https://github.com/W3Layouts/gatsby-starter-delog/blob/109b93b42385238da52cf46e8e80d8a77730e42d/gatsby-config.js#L18) in `gatsby-config.js` file in your project.
-* and google analytics tracking id
+
+### Add Google Analytics
+Change `trackingId` in `gatsby-config.js` at `gatsby-plugin-google-analytics` plugin
 
 I hope you build a great website with Delog. If you like it please spread the word, Feel free to contribute and raise a pull request :)
 
 For issues,feedback on enhancement or sharing your new awesome website built with delog. [Create New Issue](https://github.com/W3Layouts/delog/issues/new) Here
 
-### Upcoming Features Roadmap
-- [ ] Pagination for Blog
-- [ ] Social Icons
-- [x] Dark Mode
+### Roadmap
+We are maintaining future task in [Github Project](https://github.com/W3Layouts/gatsby-starter-delog/projects/1), even though most changes are instantaious. We try keep them posted here.
 
 ---
 
 ## Changelog
 All notable changes to this project are listed here.
+
+### [1.5.0] - 2020-05-03
+#### Added
+- Settings page in Netlify CMS to customize site meta data.
+- Site meta data is pulled from `site-meta-data.json`. maintained via Netlify CMS
 
 ### [1.4.0] - 2020-05-01
 #### Added
