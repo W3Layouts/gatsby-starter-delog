@@ -30,7 +30,7 @@ collections:
           - widget: object
             name: home
             label: Homepage Options
-            fields: 
+            fields:
               - widget: string
                 name: title
                 label: Title
@@ -41,12 +41,6 @@ collections:
                 label: Description
                 default: ''
                 required: false
-          - widget: string
-            name: w3l_dom_key
-            label: W3Layouts Domain Verification Key
-            required: false
-            hint: This is required for contact form. You can get it from https://my.w3layouts.com/Forms/
-
   - name: blog
     label: Blog
     folder: _data/blog
@@ -59,7 +53,7 @@ collections:
           widget: hidden,
           default: BlogPost,
         }
-      - name: path 
+      - name: path
         label: Path
         widget: string
         pattern: [/]
@@ -79,4 +73,3 @@ collections:
           config:
             multiple: false
       - { name: body, label: Body, widget: markdown }
-      
