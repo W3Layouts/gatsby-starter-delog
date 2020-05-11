@@ -38,7 +38,6 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         description
-        w3l_dom_key
       }
     }
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
