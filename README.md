@@ -33,7 +33,8 @@ Instructions also available at W3Layouts [Delog Launch Article](https://w3layout
 * And your site starts build process. After the build process your website is live
 
 ### Changing repositary URL for Netlify CMS access
-You need to change repo URL to your own `repo` at `/static/admin/config.yml`, for example `username/repo-name`
+You need to change repo URL to your own `repo` at `/static/admin/config.yml`, for example `username/repo-name`.
+And if you are using a `main` vs. a `master` branch, you will need to add an addition line in your `config.yml` before the `repo` line with the following config: `branch: main` (or whatever your default branch name is). 
 
 ### Creating Github OAuth Client ID
 * Goto Github [Developer Settings](https://github.com/settings/developers)
